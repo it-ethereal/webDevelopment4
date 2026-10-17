@@ -1,0 +1,59 @@
+[
+    {
+      "firstName": "Tom",
+      "lastName": "Smith",
+      "email": "tom@example.com",
+      "dateOfBirth": "2000-01-10",
+      "address": {
+        "street": "123 Main St",
+        "city": "Beijing",
+        "state": "Beijing",
+        "zipCode": "100000"
+      },
+      "preferences": {
+        "theme": "light",
+        "language": "English",
+        "notifications": true,
+        "subscription": true
+      }
+    },
+
+    {
+      "firstName": "Amy",
+      "lastName": "Lee",
+      "email": "amy@example.com",
+      "dateOfBirth": "1999-05-22",
+      "address": {
+        "street": "456 Park Rd",
+        "city": "Shanghai",
+        "state": "Shanghai",
+        "zipCode": "200000"
+      },
+      "preferences": {
+        "theme": "dark",
+        "language": "Chinese",
+        "notifications": false,
+        "subscription": false
+      }
+    },
+    
+    {
+      "firstName": "Bob",
+      "lastName": "Brown",
+      "email": "bob@example.com",
+      "dateOfBirth": "2001-08-15",
+      "address": {
+        "street": "789 Lake Ave",
+        "city": "Guangzhou",
+        "state": "Guangdong",
+        "zipCode": "510000"
+      },
+      "preferences": {
+        "theme": "light",
+        "language": "Chinese",
+        "notifications": true,
+        "subscription": true
+      }
+    }
+  ]
+  

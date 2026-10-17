@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalogue>
+  <book id="book1">
+    <title>Harry Potter</title>
+    <author>J.K. Rowling</author>
+    <price>59.9</price>
+  </book>
+  <book id="book2">
+    <title>Computer Network</title>
+    <author>Xie Xiren</author>
+    <price>45.5</price>
+  </book>
+  <book id="book3">
+    <title>Operating System</title>
+    <author>Tang Xiaodan</author>
+    <price>66.0</price>
+  </book>
+</catalogue>

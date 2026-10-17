@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Book Catalogue(XML)</title>
+</head>
+<body>
+    <h1>Book Catalogue</h1>
+    <div id="bookList"></div>
+
+    <script>
+        fetch('book.xml')
+        .then(response => {
+            if(!response.ok) throw new Error('Fetch error: ' + response.status)
+            return response.text();
+        })
+        .then(xmlText => {
+            const parser = new DOMParser();
+            const xmlDoc = parser.parseFromString(xmlText,'text/xml');
+            const books = xmlDoc.querySelectorAll("book");
+            const container = document.getElementById("bookList");
+
+            books.forEach(book => {
+                const id = book.getAttribute("id");
+                const title = book.querySelector("title").textContent;
+                const author = book.querySelector("author").textContent;
+                const price = book.querySelector("price").textContent;
+
+                container.innerHTML += `
+                <div>
+                    <p>Book ID: ${id}</p>
+                    <p>Title: ${title}</p>
+                    <p>Author: ${author}</p>
+                    <p>Price: ${price}</p>
+                </div>
+                `
+            })
+        })
+        .catch(err => console.error('Fetch error: ' + err.message));
+    </script>
+</body>
+</html>
